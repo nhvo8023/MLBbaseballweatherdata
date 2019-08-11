@@ -41,10 +41,88 @@ pd.to_datetime(W.Date)
 W.Date.head()
 
 
+W['Month']=W.Date.astype('datetime64[M]')
+April2009 = W.loc[W.Month=="2009-04-01",]
+May2009= W.loc[W.Month=="2009-05-01",]
+June2009= W.loc[W.Month=="2009-06-01",]
+July2009= W.loc[W.Month=="2009-07-01",]
+August2009= W.loc[W.Month=="2009-08-01",]
+September2009 = W.loc[W.Month=="2009-09-01",]
+October2009 = W.loc[W.Month=="2009-10-01",]
+
+April2010 = W.loc[W.Month=="2010-04-01",]
+May2010= W.loc[W.Month=="2010-05-01",]
+June2010= W.loc[W.Month=="2010-06-01",]
+July2010= W.loc[W.Month=="2010-07-01",]
+August2010= W.loc[W.Month=="2010-08-01",]
+September2010 = W.loc[W.Month=="2010-09-01",]
+October2010 = W.loc[W.Month=="2010-10-01",]
+
+April2011 = W.loc[W.Month=="2011-04-01",]
+May2011= W.loc[W.Month=="2011-05-01",]
+June2011= W.loc[W.Month=="2011-06-01",]
+July2011= W.loc[W.Month=="2011-07-01",]
+August2011= W.loc[W.Month=="2011-08-01",]
+September2011 = W.loc[W.Month=="2011-09-01",]
+October2011 = W.loc[W.Month=="2011-10-01",]
+
+April2013 = W.loc[W.Month=="2013-04-01",]
+May2013= W.loc[W.Month=="2013-05-01",]
+June2013= W.loc[W.Month=="2013-06-01",]
+July2013= W.loc[W.Month=="2013-07-01",]
+August2013= W.loc[W.Month=="2013-08-01",]
+September2013 = W.loc[W.Month=="2013-09-01",]
+October2013 = W.loc[W.Month=="2013-10-01",]
+
+April2014 = W.loc[W.Month=="2014-04-01",]
+May2014= W.loc[W.Month=="2014-05-01",]
+June2014= W.loc[W.Month=="2014-06-01",]
+July2014= W.loc[W.Month=="2014-07-01",]
+August2014= W.loc[W.Month=="2014-08-01",]
+September2014 = W.loc[W.Month=="2014-09-01",]
+October2014 = W.loc[W.Month=="2014-10-01",]
+
+April2015 = W.loc[W.Month=="2015-04-01",]
+May2015= W.loc[W.Month=="2015-05-01",]
+June2015= W.loc[W.Month=="2015-06-01",]
+July2015= W.loc[W.Month=="2015-07-01",]
+August2015= W.loc[W.Month=="2015-08-01",]
+September2015 = W.loc[W.Month=="2015-09-01",]
+October2015 = W.loc[W.Month=="2015-10-01",]
+
+April2016 = W.loc[W.Month=="2016-04-01",]
+May2016= W.loc[W.Month=="2016-05-01",]
+June2016= W.loc[W.Month=="2016-06-01",]
+July2016= W.loc[W.Month=="2016-07-01",]
+August2016= W.loc[W.Month=="2016-08-01",]
+September2016 = W.loc[W.Month=="2016-09-01",]
+October2016 = W.loc[W.Month=="2016-10-01",]
+
+April2017 = W.loc[W.Month=="2017-04-01",]
+May2017= W.loc[W.Month=="2017-05-01",]
+June2017= W.loc[W.Month=="2017-06-01",]
+July2017= W.loc[W.Month=="2017-07-01",]
+August2017= W.loc[W.Month=="2017-08-01",]
+September2017 = W.loc[W.Month=="2017-09-01",]
+October2017 = W.loc[W.Month=="2017-10-01",]
+
+April2018 = W.loc[W.Month=="2018-04-01",]
+May2018= W.loc[W.Month=="2018-05-01",]
+June2018= W.loc[W.Month=="2018-06-01",]
+July2018= W.loc[W.Month=="2018-07-01",]
+August2018= W.loc[W.Month=="2018-08-01",]
+September2018 = W.loc[W.Month=="2018-09-01",]
+October2018 = W.loc[W.Month=="2018-10-01",]
+
+
+
 
 COL=BB.loc[BB.Home=='COL',]
 COL
 list(COL.columns)
 
 COL.Date=pd.datetime(COL.Date)
+
+
+
 
