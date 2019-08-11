@@ -41,6 +41,17 @@ pd.to_datetime(W.Date)
 W.Date.head()
 
 
+W.drop('NormHigh',axis=1,inplace=True)
+W.drop('NormLow',axis=1,inplace=True)
+W.drop('RecHigh',axis=1,inplace=True)
+W.drop('RecYear',axis=1,inplace=True)
+W.drop('RecLow',axis=1,inplace=True)
+W.drop('RecYear1',axis=1,inplace=True)
+W.drop('SnowGround',axis=1,inplace=True)
+W.drop('HeatDegDay',axis=1,inplace=True)
+W.drop('CoolDegDay',axis=1,inplace=True)
+
+
 W['Month']=W.Date.astype('datetime64[M]')
 April2009 = W.loc[W.Month=="2009-04-01",]
 May2009= W.loc[W.Month=="2009-05-01",]
