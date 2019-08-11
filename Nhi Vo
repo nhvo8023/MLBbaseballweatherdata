@@ -1,0 +1,50 @@
+import numpy as np
+import pandas as pd
+
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+
+np.set_printoptions(precision=4)
+
+import datetime
+datetime_object = datetime.datetime.now()
+print(datetime_object)
+
+
+
+W = pd.read_csv('Denver_Weather.csv')
+BB= pd.read_csv('baseball_stats.csv')
+W
+BB
+
+
+list(W.columns)
+W.columns = ['Date',
+ 'ActHigh',
+ 'ActLow',
+ 'ActAvg',
+ 'NormHigh',
+ 'NormLow',
+ 'NormAvg',
+ 'NormDept',
+ 'RecHigh',
+ 'RecYear',
+ 'RecLow',
+ 'RecYear1',
+ 'PrecipAmt',
+ 'SnowAmt',
+ 'SnowGround',
+ 'HeatDegDay',
+ 'CoolDegDay','Unnamed: 17']
+W
+pd.to_datetime(W.Date)
+W.Date.head()
+
+
+
+COL=BB.loc[BB.Home=='COL',]
+COL
+list(COL.columns)
+
+COL.Date=pd.datetime(COL.Date)
+
