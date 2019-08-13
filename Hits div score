@@ -1,0 +1,10 @@
+COW['Total Hits']=COW['Home Hits']+COW['Visitor Hits']
+COW['Total Score']= COW['Home Score']+COW['Visitor Score']
+COW['Hits div Score']=COW['Total Hits']/COW['Total Score']
+
+
+
+
+
+
+sns.regplot(x=COWMON['ActAvg'], y=COWMON['Hits div Score'])
